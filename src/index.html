@@ -8,31 +8,57 @@
   </head>
 
   <body>
-
     <script src="index.js" type="module"></script>
+    <main>
+     <!--Página 1-->
+     <section id="Página 1">
+       <h1>Usuario</h1>
+       <p>Si no tienes un usuario asignado ingresa tu primer nombre.</p>
+       <form>
+        <input
+          type="text"
+          id="Usuario"
+          placeholder="Usuario"
+          name="Usuario"
+          required
+        />
+       </form>
+       <br>
+       <button type="submit">Continuar</button>
+     </section>
+      
+     <!--Página 2-->
+     <section id="Página 2">
+       <h2>Activación de Tarjeta</h2>
+       <p>Para la activación se debe hacer una validación de la Tarjeta de Crédito, ingresando el número a continuación:</p>
+       <form>
+        <input
+          type="text"
+          id="Número de Tarjeta de Crédito"
+          placeholder="Número de Tarjeta de Crédito"
+          name="Número de Tarjeta de Crédito"
+          required
+        />
+       </form>
+       <br>
+       <button type="submit">Validar</button>
+     </section>
 
-    <!--Página 1-->
+     <!--Página 3-->
+     <section id="Página 3">
+       <h2>Activación de Tarjeta</h2>
+       <p>Tarjeta de Crédito NO Valida</p>
+       <br>
+       <button type="submit">Volver</button>
+     </section>
 
-      <h1>Usuario</h1>
-      <p>Si no tienes un usuario asignado ingresa tu primer nombre.</p>
-      <p>Continuar</p>
-
-    <!--Página 2-->
-
-      <h2>Activación de Tarjeta</h2>
-      <p>Para la activación se debe hacer una validación de la Tarjeta de Crédito, ingresando el número a continuación:</p>
-      <p>Validar</p>
-    
-    <!--Página 3-->
-
-     <h2>Activación de Tarjeta</h2>
-     <p>Tarjeta de Crédito NO Valida</p>
-     <p>Volver</p>
-
-    <!--Página 4-->
-     <h2>Activación de Tarjeta</h2>
-     <p>Tarjeta de Crédito Valida</p>
-     <p>Salir</p>
-
+     <!--Página 4-->
+     <section id="Página 4">
+       <h2>Activación de Tarjeta</h2>
+       <p>Tarjeta de Crédito Valida</p>
+       <br>
+       <button type="submit">Salir</button>
+     </section>
+   </main>
   </body>
 </html>
