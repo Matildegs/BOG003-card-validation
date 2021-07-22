@@ -1,13 +1,29 @@
 body {
     background-color: #E5E5E5;
     background-image: url("TC.13 Imagenes/Fondo Abeja.jpg");
-    background-size: 70%;
-    background-position: right;
+    background-size: 80%;
+    background-position-x: right;
     background-repeat: no-repeat;
 }
 main {
     background-image: url("TC.13 Imagenes/BANCO CONAVI.png");
     background-size: 20%;
-    background-position: right top;
+    background-position-y: 30%;
+    background-position-x: 85%;
     background-repeat: no-repeat;
 }
+#Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Pagina2 {
+ display: none;
+} 
+#Pagina3 {
+    display: none;
+}
+#Pagina4 {
+    display: none;
+}  
+
