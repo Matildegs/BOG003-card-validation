@@ -8,69 +8,72 @@
   </head>
 
   <body>
-    
+
+    <header> <!--Logo Falta alinear con el nombre-->
+      <div>
+          <img id="Logo" src="TC.13 Imagenes/BANCO CONAVI.png" width="30%">
+      </div>
+    </header>
+
     <main>
-     <!--Logo Falta alinear con el nombre-->
-     <div id="Logo" >
-       <img src="TC.13 Imagenes/istockphoto-675072372-612x612 1.png" width="5%" >
-     </div>
 
-     <!--Página 1-->
-     <div id="Pagina1">
-       <h1>Usuario</h1>
-
+      <!--Prueba onclick--> <!--addEventListener investigar click boton display css desde js-->
        <button onclick="myFunction()">Click Me</button>
        <div id="myDIV">This is my DIV element.</div>
-       
-       <p>Si no tienes un usuario asignado ingresa tu primer nombre.</p>
-       <form>
-        <input
-          type="text"
-          id="Usuario"
-          placeholder="Usuario"
-          name="Usuario"
-          required
-        />
-       </form>
-       <br>
-       <input type="button" name="answer" value="Continuar" onclick="showDiv()"/>
-     </div>
-     <!--addEventListener investigar click boton
-      display css desde js>
 
-     <!--Página 2-->
-     <div id="Pagina2">
-       <h2>Activación de Tarjeta</h2>
-       <p>Para la activación se debe hacer una validación de la Tarjeta de Crédito, ingresando el número a continuación:</p>
-       <form>
-        <input
-          type="text"
-          id="Número de Tarjeta de Crédito"
-          placeholder="Número de Tarjeta de Crédito"
-          name="Número de Tarjeta de Crédito"
-          required
-        />
-       </form>
-       <br>
-       <button type="submit">Validar</button>
-      </div>
+      <!--Página 1-->
+       <div id="Pagina1">
+         <h1>Usuario</h1>
+         <p>Si no tienes un usuario asignado ingresa tu primer nombre.</p>
+         <form>
+           <input
+           type="text"
+           id="Usuario"
+           placeholder="Usuario"
+           name="Usuario"
+           required
+           />
+         </form>
+         <br>
+         <input type="button" name="answer" value="Continuar" onclick="showDiv()"/>
+       </div>
+     
+      <!--Página 2-->
+       <div id="Pagina2">
+         <h2>Activación de Tarjeta</h2>
+         <p>Para la activación se debe hacer una validación de la Tarjeta de Crédito, ingresando el número a continuación:</p>
+         <form>
+           <input
+           type="text"
+           id="Número de Tarjeta de Crédito"
+           placeholder="Número de Tarjeta de Crédito"
+           name="Número de Tarjeta de Crédito"
+           required
+           />
+         </form>
+         <br>
+         <button type="submit">Validar</button>
+       </div>
 
-     <!--Página 3-->
-     <div id="Pagina3">
-       <h2>Activación de Tarjeta</h2>
-       <p>Tarjeta de Crédito NO Valida</p>
-       <br>
-       <button type="submit">Volver</button>
-     </div>
+      <!--Página 3-->
+       <div id="Pagina3">
+         <h2>Activación de Tarjeta</h2>
+         <p>Tarjeta de Crédito NO Valida</p>
+         <br>
+         <button type="submit">Volver</button>
+       </div>
 
-     <!--Página 4-->
-     <div id="Pagina4">
-       <h2>Activación de Tarjeta</h2>
-       <p>Tarjeta de Crédito Valida</p>
-       <br>
-       <button type="submit">Salir</button>
-     </div>
-   </main>
-   <script src="index.js" type="module"></script>
+      <!--Página 4-->
+       <div id="Pagina4">
+         <h2>Activación de Tarjeta</h2>
+         <p>Tarjeta de Crédito Valida</p>
+         <br>
+         <button type="submit">Salir</button>
+       </div>
+
+    </main>
+    <footer> </footer>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
+

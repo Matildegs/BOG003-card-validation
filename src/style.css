@@ -5,17 +5,8 @@ body {
     background-position-x: right;
     background-repeat: no-repeat;
 }
-main {
-    background-image: url("TC.13 Imagenes/BANCO CONAVI.png");
-    background-size: 20%;
-    background-position-y: 30%;
-    background-position-x: 85%;
-    background-repeat: no-repeat;
-}
 #Logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    float:right;
 }
 #Pagina2 {
  display: none;
