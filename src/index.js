@@ -4,9 +4,11 @@ console.log(validator);
 
 function myFunction() {
     var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
+    if (x.style.display = "none") 
+    {
       x.style.display = "block";
-    } else {
+    } 
+    else {
       x.style.display = "none";
     }
   }
