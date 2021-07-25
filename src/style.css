@@ -1,3 +1,4 @@
+
 body {
     background-color: #E5E5E5;
     background-image: url("TC.13 Imagenes/Fondo Abeja.jpg");
@@ -5,20 +6,12 @@ body {
     background-position-x: right;
     background-repeat: no-repeat;
 }
+
 #Logo {
     float:right;
+}
+/* pruebas*/
 
-}
-#Pagina1 {
- /* Rectangle 2 */
- float: right;
- position: absolute;
- width: 340px;
- height: 420px;
- background: linear-gradient(329.08deg, rgba(247, 229, 72, 0.5) 16.79%, rgba(251, 171, 15, 0.5) 91.34%);
- box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
- border-radius: 80px;
-}
 #Pagina2 {
  display: none;
 } 

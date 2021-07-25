@@ -2,13 +2,13 @@ import validator from './validator.js';
 
 console.log(validator);
 
-function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display = "none") 
-    {
-      x.style.display = "block";
-    } 
-    else {
-      x.style.display = "none";
-    }
+// Pruebas.
+const targetDiv = document.getElementById("Pagina2");
+const btn = document.getElementById("Continuar");
+btn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
   }
+};
