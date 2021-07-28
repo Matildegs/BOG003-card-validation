@@ -6,14 +6,14 @@ body {
     background-position-x: right;
     background-repeat: no-repeat;
 }
-
 #Logo {
     float:right;
 }
-/* pruebas*/
+
+/*Display*/
 
 #Pagina2 {
- display: none;
+    display: none;
 } 
 #Pagina3 {
     display: none;
@@ -21,4 +21,66 @@ body {
 #Pagina4 {
     display: none;
 }  
+/*Estilo*/
+
+h1{
+    background: linear-gradient(329.08deg, rgba(247, 229, 72, 0.5) 16.79%, rgba(251, 171, 15, 0.5) 91.34%);
+    mix-blend-mode: hard-light;
+    border: 40px solid linear-gradient(329.08deg, rgba(247, 229, 72, 0.5) 16.79%, rgba(251, 171, 15, 0.5) 91.34%);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    width: 294px;
+    height: 60px;
+    border-radius: 20px;
+    color: #EEEEF0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+}
+h2 {
+    background: linear-gradient(329.08deg, rgba(247, 229, 72, 0.5) 16.79%, rgba(251, 171, 15, 0.5) 91.34%);
+    mix-blend-mode: hard-light;
+    border: 40px solid linear-gradient(329.08deg, rgba(247, 229, 72, 0.5) 16.79%, rgba(251, 171, 15, 0.5) 91.34%);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    width: 294px;
+    height: 60px;
+    border-radius: 20px;
+    color: #EEEEF0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+
+}
+p {
+    color:#9B8760;
+}
+
+#Pagina01 {
+    background: linear-gradient(329.08deg, rgba(247, 229, 72, 0.5) 16.79%, rgba(251, 171, 15, 0.5) 91.34%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 294px;
+    height: 277px;
+    margin-top: 156px;
+    margin-left: 156px;
+    margin-bottom: 204px;
+    margin-right: 499px;
+    text-align: center;
+}
+#Pagina02 {
+    background: linear-gradient(329.08deg, rgba(247, 229, 72, 0.5) 16.79%, rgba(251, 171, 15, 0.5) 91.34%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 294px;
+    height: 277px;
+    margin-top: 156px;
+    margin-left: 156px;
+    margin-bottom: 204px;
+    margin-right: 499px;
+    text-align: center;
+}
+
 

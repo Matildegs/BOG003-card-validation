@@ -16,43 +16,44 @@
     </header>
 
     <main>
-
-      <!--Prueba onclick--> <!--addEventListener investigar click boton display css desde js-->
-      
-      
-      <center> 
       <!--Página 1-->
        <div id="Pagina1">
-         <h1>Usuario</h1>
-         <p>Si no tienes un usuario asignado ingresa tu primer nombre.</p>
-         <form>
-           <input
-           type="text"
-           id="Usuario"
-           placeholder="Usuario"
-           name="Usuario"
-           required
-           />
-         </form>
-         <br>
-         <button id="Continuar">Continuar</button>
-       </div>
+         <section id="Pagina01">
+            <h1>Usuario</h1>
+            <p>Si no tienes un usuario asignado ingresa tu primer nombre.</p>
+            <form>
+              <input
+              type="text"
+              id="Usuario"
+              placeholder="Usuario"
+              name="Usuario"
+              required
+              />
+            </form>
+            <br>
+            <button id="Continuar">Continuar</button>
+          </section>
+        </div>
      
       <!--Página 2-->
        <div id="Pagina2">
-         <h2>Activación de Tarjeta</h2>
-         <p>Para la activación se debe hacer una validación de la Tarjeta de Crédito, ingresando el número a continuación:</p>
-         <form>
-           <input
-           type="text"
-           id="Número de Tarjeta de Crédito"
-           placeholder="Número de Tarjeta de Crédito"
-           name="Número de Tarjeta de Crédito"
-           required
-           />
-         </form>
-         <br>
-         <button id="Validar" type="submit">Validar</button>
+          <section id="Pagina02">
+            <h2>Activación de Tarjeta</h2>
+            <p>Para la activación se debe hacer una validación de la Tarjeta de Crédito, 
+              ingresando el número a continuación:</p>
+            <label for="creditcardNumber">
+                <input
+                name="numeroTarjeta"
+                type="text"
+                maxlength="18"
+                id="creditcardNumber"
+                placeholder="Ingrese número de tarjeta"
+                required
+                />
+            </label>
+            <br>
+            <button class="buton" id="Validar" onclick="">Validación</button>
+          </section>
        </div>
 
       <!--Página 3-->
@@ -70,7 +71,6 @@
          <br>
          <button type="submit">Salir</button>
        </div>
-      </center>
     </main>
     <footer> </footer>
     <script src="index.js" type="module"></script>
