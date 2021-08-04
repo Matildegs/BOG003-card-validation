@@ -1,70 +1,66 @@
 const validator = {
-  // ...
-};
 
-// export default validator;
-// function isValidCard(tarjeta) {
-//   //Se coloca una variable numerica para poder hacer las operaciones
-//     var numero = 0;
-//   //Ingresar los datos, si tiene espacios o esta vacio y si no son numeros regresar a prompt
-//     tarjeta = prompt ('Ingresa un número de tarjeta');
-//       if (tarjeta === null || (isNaN(tarjeta) === true) ){
-//         alert('Ingrese un número de tarjeta válido');
-//         return isValidCard(tarjeta);
-//         }
-//   //Se van a iterar caracter numerico por caracter
-//     for (var j= 0; j< tarjeta.length; j++){
-//       if (isNaN(tarjeta.charAt(j)) === true)
-//       numero++
-//     }
-//     if (numero > 0){
-//       alert('El número de tarjeta contiene letras o carácteres especiales, ingrese un número de tarjeta válido.');
-//       return isValidCard(tarjeta);
-//     }
-//     //Despues de validar si los digitos con correcto
-//     /*Se estara iterando numero a numero, con un array inverso, se estaran sumando y invirtiendo el array
-//     con los numeros pares*/
-//       var sum     = 0,
-//           alt     = false,
-//           i       = tarjeta.length-1,
-//           num;
-//   //Si el numero de caracteres de la tarjeta proporcionada son menores a 13 o mayores a 19
-//   //la tarjeta se regresa al prompt
-//       if (tarjeta.length < 13 || tarjeta.length > 19){
-//           alert('El número de tarjeta tiene que ser mayor a 13 y menor a 19 dígitos.');
-//         return isValidCard(tarjeta);
-//       }
-//   //Mientras los numeros sea mayor o igual a 0 se estara tomando cada caracter
-//       while (i >= 0){
-//   //Se estaran tomando cada caracter numerico enteros ingresado en tarjeta
-//           num = parseInt(tarjeta.charAt(i), 10);
-//           //Valida que el número sea válido
-//           if (isNaN(num)){
-//               return false;
-//           }
-//           //Válida el cambio true o false de imparidad
-//           if (alt) {
-//               num *= 2;
-//               if (num > 9){
-//                   num = (num % 10) + 1;
-//               }
-//           }
-//           //Voltea el bit de paridad
-//           alt = !alt;
-//           //Agrega el número
-//           sum += num;
-//           //Continúa con el siguiente dígito
-//           i--;
-//       }
-//       //Determina si la tarjeta es válida
-//       if (sum % 10 === 0 && sum!==0){
-//         return alert('Tarjeta válida');
-//       }
-//         else{
-//         return alert('Tarjeta inválida');
-//         }
+  //*Tarjeta de Crédito Válida: 
+
+  //* 1. Preguntar por el número de la tarjeta
+  //* 2. Pasar los números a un array en orden
+  //*Dar la vuelta a una cadena usando split()
+  //* var = "123456"
+  //* tarjeta.split('').reverse()
+  //* (6) ["6", "5", "4", "3", "2", "1"]
+  //*Inicio de función:
+  isValid: function(creditcardNumber) {
+    let numberVa = creditcardNumber.split("");
+    let numberLunh = numberVa.reverse();
+    let arraySuma = 0;
+    let sumaImpar = 0;
+    let sumaTotal = 0;
+    let sumaPar = 0;
+    //* 3. Aplicar operaciones a los números de las posiciones pares. A todos  
+    //* que ocupan las posiciones pares se les debe multiplicar por dos y si el doble de 
+    //* ese número es mayor o igual a 10 debemos de sumar los digitos del resultado.
+    //* Los números que ocupan las posiciones pares se les debe multiplicar por dos:
+    for (
+      let i = 0; i < numberLunh.length; i++) {
+      //* Posición:
+      if (i % 2 === 1){
+        //* Multiplicar:
+        sumaPar = numberLunh[i] * 2;
+      
+       
+      //* El número es mayor o igual a 10 debemos de sumar los digitos del resultado:
+      if (sumaPar >= 10) {
+        //* String y se separa:
+        arraySuma = sumaPar.toString().split("")
+        //* Se suman entres si para dar un solo número: 
+        numberLunh[i] = parseInt(arraySuma[0]) + parseInt(arraySuma[1])
+      }
+      //* Actualiza el valor de los números par, que no se deben multiplicar y 
+      //* almacenar los numeros impares: 
+      else { 
+        numberLunh[i] = sumaPar; } }
+      sumaTotal = parseInt(sumaTotal) + parseInt(numberLunh[i]);
+      if (i % 2 === 0) {
+        sumaImpar = parseInt(sumaImpar) + parseInt(numberLunh[i])
+      }
+    }
+    //* 4. Sumar los digitos y nuevos digitos. Ahora deberás sumar los números de las posiciones 
+    //* impares y el nuevo número que se obtendrá de las posiciones pares.
+    sumaTotal = sumaTotal + sumaImpar;
+    if (sumaTotal % 10 == 0) {
+      console.log("Valido")
+      return true
+    }
+    else { 
+      console.log("Invalido")
+      return false; }
+  },
+  //* 5. Comprobar si es una tarjeta válida. Cuando ya tengas el resultado deberás obtener el résiduo de la 
+  //* división entre 10  y si es igual a 0 significa que es una tarjeta de crédito válida.
+  //*Maskify
   
   
-//   }
-  
-//   isValidCard();*//
+};
+export default validator;
+
+

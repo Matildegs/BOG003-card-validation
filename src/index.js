@@ -1,6 +1,7 @@
 import validator from './validator.js';
 
-console.log(validator);
+ let numeroTarjeta = document.getElementById("creditcardNumber").value 
+ //console.log(validator.isValid(numeroTarjeta));
 
 //Alerta Bienvenido
 
@@ -18,5 +19,22 @@ console.log(validator);
   targetDivPagina1.style.display = "none";
   })
 
-// Pruebas Validación 
+// boton Validación 
+  document.getElementById("Validar").addEventListener("click", function (creditCardNumber) {
+  let numeroTarjeta = document.getElementById("creditcardNumber").value;
+  console.log(validator.isValid(numeroTarjeta));
+       if (validator.isValid (numeroTarjeta)) {
+         alert("Valida");
+         return;
+      }   
+      else {
+        alert("No Valida");
+        return;
+       }
+  
+})
+//*¿Como guardar en una variable el resultado de la funcion isValid? linea 13 variable decidir si se muestra o ocultar.
+
+  
+  
 
